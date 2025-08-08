@@ -374,7 +374,13 @@
 
         <button class="next-button" id="nextButton">Go to Next Page</button>
     </div>
-
+<audio id="bgAudio" autoplay loop>
+        <source src="Anna Antene.mp3" type="audio/mpeg">
+        <!-- Note: In a real implementation, you'd use an actual sad love song -->
+    </audio>
+    <button onclick="document.getElementById('bgAudio').play()" style="position:fixed;top:20px;right:20px;z-index:1000;">
+    🎶
+    </button>
     <script>
         const lightButton = document.getElementById('lightButton');
         const initialScreen = document.getElementById('initialScreen');
@@ -472,4 +478,5 @@
         });
     </script>
 </body>
+
 </html>
